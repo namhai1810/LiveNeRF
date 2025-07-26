@@ -202,47 +202,35 @@
             <h2 class="title is-3">Abstract</h2>
             <div class="content has-text-justified">
               <p>
-                The synthesis of photorealistic talking head videos from a
-                single facial image and corresponding speech audio represents a
-                significant challenge in computer vision, primarily due to the
-                interdependent complexities of modeling natural head motion
-                dynamics, ensuring temporal coherence in facial expressions, and
-                preserving subject identity under constrained computational
-                resources. Current diffusion-based approaches, while
-                demonstrating potential, face limitations in practical
-                deployment due to their reliance on computationally intensive
-                training paradigms and large-scale datasets. This paper
-                introduces LiveNeRF, a computationally efficient framework for
-                identity-preserving facial animation and dynamic portrait
-                synthesis, which extends the capabilities of Efficient
-                Region-aware Neural Radiance Fields (ER-NeRF) through novel
-                real-time face replacement modules. The proposed framework
-                employs an enhanced 3D head reconstruction architecture that
-                builds upon ER-NeRF's tri-plane decomposition, incorporating
-                specialized real-time modules for dynamic face manipulation and
-                identity transfer. Our lightweight real-time face replacement
-                system enables generalized control over head-torso articulation
-                and cross-identity expression transfer while maintaining
-                temporal stability and computational efficiency. By extending
-                ER-NeRF with these real-time processing capabilities, the
-                framework addresses the computational inefficiencies of existing
-                methods, eliminating dependencies on large-scale training data
-                through the strategic enhancement of pretrained neural
-                representations. The methodology explicitly decouples facial
-                geometry reconstruction from identity manipulation, mitigating
-                unintended artifacts inherent in traditional face replacement
-                pipelines. Furthermore, the integration of real-time face
-                replacement modules with 3D-aware neural priors ensures the
-                preservation of high-fidelity facial details during identity
-                transfer operations. This work contributes a practical
-                architectural framework for scalable facial animation,
-                demonstrating the successful extension of ER-NeRF with
-                specialized real-time face replacement modules to achieve
-                efficient, identity-consistent synthesis of dynamic avatars. Our
-                comprehensive evaluation validates the effectiveness of this
-                integrated approach, achieving superior visual quality metrics
-                while maintaining real-time performance suitable for practical
-                deployment.
+                Synthesizing photorealistic talking head videos from single
+                facial images and speech audio presents significant challenges
+                in modeling natural head motion dynamics, ensuring temporal
+                coherence, and preserving subject identity under computational
+                constraints. Current diffusion-based approaches face deployment
+                limitations due to computationally intensive training and
+                large-scale dataset requirements. This paper introduces
+                LiveNeRF, a computationally efficient framework for
+                identity-preserving facial animation that fundamentally
+                redesigns Efficient Region-aware Neural Radiance Fields
+                (ER-NeRF) through integrated real-time face replacement modules.
+                Our unified architecture employs enhanced 3D head reconstruction
+                building upon ER-NeRF's tri-plane decomposition, incorporating
+                specialized modules for dynamic face manipulation and identity
+                transfer. The lightweight system enables generalized control
+                over head-torso articulation and cross-identity expression
+                transfer while maintaining temporal stability and computational
+                efficiency. By integrating face replacement capabilities
+                directly into the neural rendering pipeline, LiveNeRF addresses
+                computational inefficiencies of existing two-stage methods,
+                eliminating dependencies on extensive training data through
+                strategic enhancement of pretrained representations. The
+                methodology explicitly decouples facial geometry reconstruction
+                from identity manipulation, mitigating artifacts inherent in
+                traditional pipelines. Our comprehensive evaluation demonstrates
+                superior visual quality metrics while maintaining real-time
+                performance (33 FPS), establishing LiveNeRF as a practical
+                solution for scalable, high-quality talking head synthesis
+                suitable for immediate deployment.
               </p>
             </div>
           </div>
@@ -254,12 +242,12 @@
           <div class="column is-four-fifths">
             <h2 class="title is-3">Video</h2>
             <div class="publication-video">
-              <iframe
+              <!-- <iframe
                 src="https://www.youtube.com/embed/Gc2d3Z8MMuI?rel=0&amp;showinfo=0"
                 frameborder="0"
                 allow="autoplay; encrypted-media"
                 allowfullscreen
-              ></iframe>
+              ></iframe> -->
             </div>
           </div>
         </div>
@@ -383,13 +371,16 @@
               </p>
             </div>
             <div class="content has-text-centered">
-              <img src="./static/images/table.png" />
+              <img src="./static/images/head_torso-quantitative.png" />
+            </div>
+            <div class="content has-text-centered">
+              <img src="./static/images/lip_sync.png" />
             </div>
           </div>
         </div>
 
         <!-- Concurrent Work. -->
-        <div class="columns is-centered">
+        <!-- <div class="columns is-centered">
           <div class="column is-full-width">
             <h2 class="title is-3">Related Links</h2>
 
@@ -412,7 +403,7 @@
               </p>
             </div>
           </div>
-        </div>
+        </div> -->
         <!--/ Concurrent Work. -->
       </div>
     </section>
@@ -426,13 +417,13 @@
     journal={arXiv preprint arXiv:2307.09323},
     year={2023}
 }</code></pre> -->
-        <pre><code>@InProceedings{li2023ernerf,
-    author    = {Li, Jiahe and Zhang, Jiawei and Bai, Xiao and Zhou, Jun and Gu, Lin},
-    title     = {Efficient Region-Aware Neural Radiance Fields for High-Fidelity Talking Portrait Synthesis},
-    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-    month     = {October},
-    year      = {2023},
-    pages     = {7568-7578}
+        <pre><code>@InProceedings{,
+    author    = {},
+    title     = {Efficient Face Replacement Through Neural Radiance Fields Integration},
+    booktitle = {},
+    month     = {},
+    year      = {},
+    pages     = {}
 }</code></pre>
       </div>
     </section>
@@ -440,12 +431,12 @@
     <footer class="footer">
       <div class="container">
         <div class="content has-text-centered">
-          <a class="icon-link" href="https://arxiv.org/pdf/2307.09323.pdf">
+          <a class="icon-link" href="">
             <i class="fas fa-file-pdf"></i>
           </a>
           <a
             class="icon-link"
-            href="https://github.com/Fictionarry/ER-NeRF"
+            href="https://github.com/namhai1810/LiveNeRF"
             class="external-link"
             disabled
           >
